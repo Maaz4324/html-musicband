@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Typography */
+body {
+  overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+nav .menu ul a {
+  color: #ffffff;
+  font-size: 2.5vmin;
+}
+nav .menu ul a:hover {
+  color: #808080;
+}
+.logo {
+  font-size: 3vmin;
+  color: white;
+}
+
+header h1 {
+  font-size: 8vmin;
+}
+header p {
+  font-size: 2vmin;
+}
+.menu-btn {
+  color: #ffffff;
+  display: none;
+}
+.cross-btn {
+  color: #ffffff;
+  display: none;
+}
+
+/* Layouts */
+
+/* navbar */
+.navbar {
+  background: rgb(0 0 0);
+  /* position: fixed; */
+  width: 100%;
+}
+nav {
+  /* border: 2px solid rgb(6, 247, 98); */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.logo {
+  margin-top: 7px;
+  cursor: pointer;
+}
+.menu {
+  /* border: 2px solid yellow; */
+  display: flex;
+}
+nav .menu ul {
+  display: flex;
+  list-style: none;
+  /* border: 2px solid rgb(151, 26, 26); */
+  /* padding: 5px; */
+  margin-bottom: 5px;
+}
+nav .menu ul a {
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+/* header */
+header {
+  /* border: 2px solid blue; */
+  height: 100vh;
+  width: 100%;
+  color: white;
+  /* background-image: url(./images/img9.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/img9.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Our Artists */
+.our-artists-section {
+  text-align: center;
+}
+.our-artists-section h1 {
+  padding: 20px;
+  font-size: 4vmax;
+}
+.our-artists {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  margin: 2em 0;
+}
+.our-artists-images img {
+  max-width: 90%;
+}
+.our-artists-images {
+  padding: 2em;
+}
+.our-artists-images p {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.our-artists-images h2 {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+.our-artists-second-fourth {
+  padding-right: 14vmax;
+}
+.our-artists-first-third {
+  padding-left: 14vmax;
+}
+
+/* Upcoming Concerts */
+.upcoming-concerts-section div img {
+  width: 70%;
+}
+.upcoming-concerts-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #252525;
+  color: white;
+}
+.upcoming-concerts-section h1 {
+  padding: 10px;
+  font-size: 4vmax;
+}
+.concert-places {
+  display: flex;
+  margin: 20px 0;
+}
+.concert-places h2 {
+  margin: 1em 0;
+}
+.concert-places p {
+  padding: 0 1.5em;
+}
+.btn {
+  width: 7em;
+  height: 3em;
+  border-radius: 5px;
+  background: #252525;
+  color: white;
+  border: 2px solid black;
+  transition: 0.3s;
+  margin: 1em 0;
+}
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+/* footer */
+.foot {
+  /* border: 2px solid red; */
+  text-align: center;
+  background: #252525;
+  color: white;
+}
+footer h1 {
+  font-size: 3vmax;
+  padding: 20px 0;
+}
+footer p {
+  /* margin-bottom: 1em; */
+  padding: 10px 0;
+  font-size: 2vmin;
+  /* border: 2px solid green; */
+}
+.social-icons {
+  margin: 0.5em;
+  font-size: 3vmin;
+  cursor: pointer;
+}
+.social-icons:hover {
+  color: #808080;
+}
+
+hr.line {
+  border-top: 0px solid grey;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Mobile device */
+@media only screen and (max-width: 850px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    background: rgb(0 0 0 / 34%);
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 4vmax;
+    z-index: 999;
+    position: fixed;
+    margin: 9px -34px;
+    /* border: 2px solid rebeccapurple; */
+  }
+  .cross-btn {
+    display: inline;
+  }
+  .menu ul {
+    flex-direction: column;
+    position: fixed;
+    inset: 0 0 0 30%;
+    padding: 3em 1em;
+    /* justify-content: center; */
+    text-align: center;
+    transform: translateX(100%);
+    transition: all 0.3 ease-out;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(0.7rem);
+  }
+
+  .nav-links[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .menu ul li {
+    margin: 20px 0;
+    font-size: 6vmin;
+  }
+  .menu ul li a {
+    font-size: 4vmax;
+  }
+  .logo {
+    font-size: 5vmax;
+    z-index: 999;
+  }
+
+  header h1 {
+    font-size: 8vmax;
+  }
+  header p {
+    font-size: 2vmax;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Our Artist */
+  .our-artists {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .our-artists-second-fourth {
+    padding: 0;
+  }
+  .our-artists-first-third {
+    padding: 0;
+  }
+  .our-artists-images {
+    padding: 2em;
+  }
+  .our-artists-images h2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .our-artists-images p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  /* Upcoming Events */
+  .concert-places {
+    flex-direction: column;
+  }
+  .upcoming-concerts-section div img {
+    margin-top: 2em;
+  }
+  .upcoming-concerts-section h1 {
+    padding: 0px;
+    font-size: 4vmax;
+  }
+}

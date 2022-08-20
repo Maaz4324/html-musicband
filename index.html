@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>DeadMan Band</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <nav>
+        <div class="logo">DeadMan</div>
+        <div class="menu">
+          <ul class="nav-links" data-visible="false">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Plans & Princing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <i class="fa fa-bars menu-btn" aria-hidden="true"></i>
+          <!-- <i class="fa fa-times cross-btn" aria-hidden="true"></i> -->
+        </div>
+
+        
+      </nav>
+    </section>
+    <section class="head">
+      <header>
+        <div class="head-text">
+          <h1>Best Music Band</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+            assumenda veritatis repudiandae.
+          </p>
+        </div>
+      </header>
+    </section>
+
+    <section class="our-artists-section">
+      <h1>OUR ARTISTS</h1>
+      <div class="our-artists">
+        <div class="our-artists-images our-artists-first-third">
+          <img src="./images/img5.jpg" alt="" />
+          <h2>Lorem, ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            labore ad similique ipsa distinctio ex.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="our-artists-images our-artists-second-fourth">
+          <img src="./images/img4.jpg" alt="" />
+          <h2>Lorem, ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            labore ad similique ipsa distinctio ex.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="our-artists-images our-artists-first-third">
+          <img src="./images/img7.jpg" alt="" />
+          <h2>Lorem, ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            labore ad similique ipsa distinctio ex.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="our-artists-images our-artists-second-fourth">
+          <img src="./images/img2.jpg" alt="" />
+          <h2>Lorem, ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            labore ad similique ipsa distinctio ex.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="upcoming-concerts-section">
+      <h1>Upcoming Concerts</h1>
+      <div class="concert-places">
+        <div class="london-concert">
+          <img src="./images/img13.jpg" alt="" />
+          <h2>LONDON</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, modi!
+            Tempore dolorem fugiat nemo aspernatur odio, similique quasi amet
+            ipsum sequi a nesciunt.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="newyork-concert">
+          <img src="./images/img15.jpg" alt="" />
+          <h2>NEW YORK</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, modi!
+            Tempore dolorem fugiat nemo aspernatur odio, similique quasi amet
+            ipsum sequi a nesciunt.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="chicago-concert">
+          <img src="./images/img11.jpg" alt="" />
+          <h2>CHICAGO</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, modi!
+            Tempore dolorem fugiat nemo aspernatur odio, similique quasi amet
+            ipsum sequi a nesciunt.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="foot">
+      <footer>
+        <hr class="line">
+        <h1>Contact Us</h1>
+        <div class="foot-social-media">
+          <i class="fa fa-facebook social-icons" aria-hidden="true"></i>
+          <i class="fa fa-twitter social-icons" aria-hidden="true"></i>
+          <i class="fa fa-instagram social-icons" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play social-icons" aria-hidden="true"></i>
+        </div>
+        <p><span>&copy; 2021 DeadMan London, Inc. All rights reserved</span></p>
+      </footer>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+      menuBtn.addEventListener("click", () => {
+        const visiblity = navLinks.getAttribute("data-visible");
+        console.log(visiblity);
+
+        if (visiblity == "false") {
+          navLinks.setAttribute("data-visible", "true");
+        } else if (visiblity === "true") {
+          navLinks.setAttribute("data-visible", "false");
+        }
+      });
+    </script>
+  </body>
+</html>
